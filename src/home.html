@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"HomePage"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="main"></section>
+			<section class="projects"></section>
+			<section class="aboutus">
+				<div class="aboutus__container">
+					<div class="aboutus__box">
+						<span class="aboutus__uptitle">ABOUT US
+						</span>
+						<h2 class="aboutus__title">We're a groundbreaking creative studio seeking to provide imaginative
+							digital
+							answers to your needs</h2>
+						<div class="aboutus__info">From 2010 onwards, we've been crafting designs that not only make an
+							impact,
+							but also yield tangible outcomes. We assist companies in innovating and maintaining high relevance
+							to
+							their customer base through the creation of advanced digital solutions.
+						</div>
+					</div>
+				</div>
+				<div class="aboutus__video">
+					<video loop autoplay playsinline muted src="@img/media/01.mp4"></video>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
 </html>

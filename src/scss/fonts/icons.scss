@@ -13,3 +13,16 @@
 		@extend %ic;
 	}
 }
+._icon-light:before {
+	content: "\e900";
+	color: #fff;
+}
+._icon-upwork:before {
+	content: "\e901";
+}
+._icon-dark:before {
+	content: "\e902";
+}
+._icon-fiver:before {
+	content: "\e903";
+}

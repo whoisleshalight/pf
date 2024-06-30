@@ -1,0 +1,132 @@
+.header {
+	&__container {
+		display: flex;
+		align-items: center;
+		gap: toRem(40);
+		padding-top: toRem(60);
+		padding-bottom: toRem(60);
+	}
+
+	&__logo {
+		flex: 0 1 50%;
+		svg {
+			width: toRem(260);
+			height: auto;
+			object-fit: contain;
+		}
+	}
+
+	&__start {
+		font-size: toRem(20);
+		text-align: center;
+		flex: 0 0 toRem(150);
+	}
+
+	&__actions {
+		display: flex;
+		align-items: center;
+		gap: toRem(40);
+		flex: 0 1 50%;
+		justify-content: flex-end;
+	}
+
+	&__menu {
+	}
+
+	&__lang {
+	}
+
+	&__mode {
+	}
+
+	&__links {
+	}
+}
+.menu {
+	&__icon {
+	}
+
+	&__body {
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: toRem(16);
+	}
+
+	&__item {
+	}
+
+	&__link {
+	}
+}
+.icon-menu {
+}
+
+.lang {
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: toRem(16);
+	}
+
+	&__item {
+	}
+
+	&__link {
+	}
+}
+.mode {
+	flex: 0 0 toRem(50);
+	width: toRem(50);
+	&__body {
+		cursor: pointer;
+		border-radius: toRem(20);
+		background-color: $mainColor;
+		padding: toRem(4);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: toRem(10);
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			width: toRem(16);
+			height: toRem(16);
+			border-radius: 50%;
+			background-color: $lightColor;
+			z-index: 3;
+		}
+		span {
+			flex: 0 0 toRem(16);
+			height: toRem(16);
+			&::before {
+				font-size: toRem(14);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex: 0 0 toRem(16);
+				height: toRem(16);
+				color: $lightColor;
+			}
+		}
+	}
+}
+.links {
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: toRem(16);
+	}
+
+	&__item {
+	}
+
+	&__link {
+		&::before {
+			font-size: toRem(24);
+		}
+	}
+}
